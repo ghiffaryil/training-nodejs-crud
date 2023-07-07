@@ -1,1 +1,27 @@
-GET 'locslhost:5000/users';
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name":"Raka",
+    "email":"raka@mail.com",
+    "gender":"Male"
+}
+
+###
+PATCH  http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name":"M Edit",
+    "email":"johndoe@edit.com",
+    "gender":"Male"
+}
+
+###
+DELETE  http://localhost:5000/users/4
